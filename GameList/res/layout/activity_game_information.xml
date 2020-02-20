@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gamelist.GameInformation"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Name" />
+
+    <ImageView
+        android:id="@+id/imageViewTestCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+    <Button
+        android:id="@+id/buttonGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClick"
+        android:text="@string/stringGoHome" />
+
+    <TextView
+        android:id="@+id/textViewConsoleInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewTestCase"
+        android:layout_alignParentRight="true"
+        android:text="For Xbox, PC, and Playstation" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Egestas congue quisque egestas diam in arcu. Urna id volutpat lacus laoreet. Augue lacus viverra vitae congue eu consequat. Sit amet consectetur adipiscing elit pellentesque habitant. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Id faucibus nisl tincidunt eget nullam non nisi est. Ac tortor dignissim convallis aenean et tortor at risus. Viverra accumsan in nisl nisi scelerisque. Sapien faucibus et molestie ac feugiat." />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewTestCase"
+        android:layout_alignLeft="@+id/buttonGoHome"
+        android:text="Rating" />
+    
+    </RelativeLayout>
